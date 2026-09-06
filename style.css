@@ -63,6 +63,7 @@ a.none {
     background: var(--p5-gold);
     padding: 0 15px;
     transform: skewX(-15deg);
+    text-align: center;
 }
 
 .bg-pp {
@@ -201,4 +202,67 @@ a.none {
     background: var(--p5-black);
     color: var(--p5-white);
     border-color: var(--p5-white);
+}
+
+/*Tablette*/
+@media (max-width: 992px) {
+    html, body {
+        overflow-x: hidden;
+    }
+
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+
+    .p5-header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        gap: 25px;
+    }
+
+    .bg-pp {
+        margin-right: 0;
+    }
+
+    .p5-forme {
+        grid-template-columns: 1fr;
+    }
+
+    .academies {
+        width: 100%;
+    }
+}
+
+/*Téléphone*/
+@media (max-width: 600px) {
+    html, body {
+        overflow-x: hidden;
+    }
+
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+
+    .subtitle {
+        font-size: 1.3rem;
+        padding: 5px 10px;
+    }
+
+    .p5-panel {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .p5-bg-title {
+        font-size: 1.5rem;
+    }
+
+    .job-title {
+        font-size: 1.1rem;
+    }
+
+    .p5-list li {
+        font-size: 0.95rem;
+    }
 }
