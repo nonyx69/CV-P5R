@@ -14,8 +14,8 @@ body {
 }
 
 a.none {
-    text-decoration: none;
     color: inherit;
+    font-weight: bold;
 }
 
 .p5-container {
@@ -137,7 +137,6 @@ a.none {
     position: relative;
     padding-left: 25px;
     margin-bottom: 10px;
-    font-weight: 700;
 }
 
 .p5-list li::before {
